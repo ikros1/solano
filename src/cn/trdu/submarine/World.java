@@ -1,4 +1,5 @@
 //该项目已上传github
+//尝试idea本地验证
 package cn.trdu.submarine;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
