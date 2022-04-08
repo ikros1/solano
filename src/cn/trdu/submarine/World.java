@@ -1,3 +1,4 @@
+//该项目已上传github
 package cn.trdu.submarine;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
