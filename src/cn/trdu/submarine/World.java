@@ -1,5 +1,6 @@
 //该项目已上传github
 //尝试idea本地验证
+//再次验证
 package cn.trdu.submarine;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -135,17 +136,7 @@ public class World extends JPanel {
         //智树对象生产函数
         Random rand = new Random();
         int type = rand.nextInt(10);
-        if(type<10){
-            //日后的扩展 不用看着奇怪啊
-            return new DoMoKi();
-
-        }else if(type<15){
-            return new DoMoKi();
-
-        }else {
-            return new DoMoKi();
-
-        }
+        return new DoMoKi();
 
     }
     private int domokiEnterIndex=0;//智树生产频率位
@@ -270,9 +261,8 @@ public class World extends JPanel {
         double degreex;
         double degreey;
        // System.out.println("导弹目标修正弹道启动");
-        double deg=1;
        // System.out.println("导弹当前数据 目标坐标 x:"+a.tergatx+" y:"+a.tergaty+"坐标 x:"+a.x+" y:"+a.y+"加速度 x:"+a.ax+" y:"+a.ay+"速度 x:"+a.speedx+" y:"+a.speedy);
-        deg=Math.sqrt(Math.pow((a.x-a.tergatx),2)+Math.pow((a.y-a.tergaty),2));
+        double deg=Math.sqrt(Math.pow((a.x-a.tergatx),2)+Math.pow((a.y-a.tergaty),2));
        // System.out.println("导弹与目标直线距离为"+deg);
         a.ax=a.engine*(a.tergatx-a.x)/deg;
         a.ay=a.engine*(a.tergaty-a.y)/deg;
